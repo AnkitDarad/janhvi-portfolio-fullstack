@@ -7,14 +7,14 @@ const contactInfo = [
   {
     icon: <Mail />,
     title: 'Email',
-    value: 'janhvi.suryawanshi@gmail.com',
-    link: 'mailto:janhvi.suryawanshi@gmail.com',
+    value: 'gjsuryawanshi@gmail.com',
+    link: 'mailto:gjsuryawanshi@gmail.com',
   },
   {
     icon: <Phone />,
     title: 'Phone',
-    value: '+91 9823000000',
-    link: 'tel:+91 9823000000',
+    value: '+91 820-8522091',
+    link: 'tel:+918208522091',
   },
   {
     icon: <MapPin />,

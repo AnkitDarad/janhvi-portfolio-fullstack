@@ -52,11 +52,11 @@ const AltConnect = () => {
               <div className="alt-contact-details">
                 <div className="alt-contact-item">
                   <span className="alt-contact-label">Email</span>
-                  <a href="mailto:janhvi.suryawanshi@gmail.com" className="alt-contact-value">janhvi.suryawanshi@gmail.com</a>
+                  <a href="mailto:gjsuryawanshi@gmail.com" className="alt-contact-value">gjsuryawanshi@gmail.com</a>
                 </div>
                 <div className="alt-contact-item">
                   <span className="alt-contact-label">Phone</span>
-                  <a href="tel:+91 9823000000" className="alt-contact-value">+91 9823000000</a>
+                  <a href="tel:+918208522091" className="alt-contact-value">+91 8208522091</a>
                 </div>
                 <div className="alt-contact-item">
                   <span className="alt-contact-label">Location</span>
