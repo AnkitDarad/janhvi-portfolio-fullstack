@@ -65,7 +65,7 @@ const AltConnect = () => {
               </div>
 
               <div className="alt-social-links">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
+                <a href="https://www.linkedin.com/in/janhvi-1658401a0/" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
                 <a href="https://www.behance.net/janhvisuryawa1" target="_blank" rel="noopener noreferrer" aria-label="Behance">
                   <img src="/behance.svg" alt="Behance" style={{ width: '22px', height: '22px' }} />
                 </a>
