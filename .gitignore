@@ -1,0 +1,15 @@
+node_modules/
+public/video/
+public/images/
+src/assets/
+*.mov
+*.mp4
+*.zip
+*.msi
+*.exe
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp

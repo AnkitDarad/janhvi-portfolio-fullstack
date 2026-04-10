@@ -1,0 +1,611 @@
+.lfi-page {
+  background: #FFFFFF;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.lfi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.lfi-hero {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.lfi-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-top: 30px;
+}
+
+.lfi-hero-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lfi-hero-title-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+}
+
+.lfi-hero-title {
+  margin-top: 40px;
+  font-size: 48px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000000;
+  line-height: 1.15;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.lfi-hero-number {
+  margin-right: 20px;
+  font-size: 184px;
+  font-weight: 700;
+  background: linear-gradient(to right, #e4e4e7, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.lfi-block-heading {
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.lfi-block-heading .lfi-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  background: #F5F7FF;
+  border: 1px solid #000000;
+  border-radius: 18px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lfi-block-title {
+  font-size: 32px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.lfi-logo-section {
+  padding: 3rem 0;
+}
+
+.lfi-logo-header {
+  margin-bottom: 1.75rem;
+}
+
+.lfi-logo-title {
+  font-size: 36;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.lfi-logo-description {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: rgba(0, 0, 0, 0.72);
+  line-height: 24px;
+  margin: 0;
+  /* max-width: 720px; */
+}
+
+.lfi-logo-hero {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.lfi-logo-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lfi-logo-thumbs {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-rows: 1fr;
+  width: 100%;
+}
+
+.lfi-logo-thumbs--count-1 {
+  grid-template-columns: 1fr;
+  max-width: 560px;
+}
+
+.lfi-logo-thumbs--count-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lfi-logo-thumbs--count-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.lfi-logo-thumbs--count-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.lfi-logo-thumbs--count-many {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.lfi-logo-thumb {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.lfi-logo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+
+.lfi-container--main-header {
+  max-width: 1150px !important;
+  margin: 0 auto !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  padding: 1.5rem 2rem !important;
+  border-radius: 18px !important;
+}
+
+.lfi-block-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.72);
+  margin: 1rem 0 0 0;
+  /* max-width: 800px; */
+  /* border: 1px solid #000000; */
+}
+
+.lfi-illustration-block {
+  padding-bottom: 5rem;
+}
+
+.lfi-illustration-group {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lfi-group-header-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.lfi-group-header-pill {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 0.6rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.lfi-illustration-grid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lfi-illustration-group.layout--narrow .lfi-illustration-grid-wrapper,
+.lfi-illustration-group.layout--narrow .lfi-illustration-sublabels {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.lfi-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.lfi-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.lfi-illustration-cell {
+  overflow: hidden;
+  transition: transform 0.35s ease;
+}
+
+.lfi-illustration-group.layout--bordered .lfi-illustration-cell {
+  border-radius: 12px;
+}
+
+.lfi-illustration-group.layout--rounded .lfi-illustration-cell {
+  border-radius: 20px;
+}
+
+.lfi-illustration-group.layout--circular .lfi-illustration-grid {
+  gap: 2.5rem;
+}
+
+.lfi-illustration-group.layout--circular .lfi-illustration-cell {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.lfi-illustration-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lfi-illustration-sublabels {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.lfi-sublabel-pill {
+  background: #F5F7FF;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .lfi-container--main-header {
+    max-width: 90% !important;
+    padding: 1.5rem 2rem !important;
+  }
+
+  .lfi-hero-number {
+    font-size: 140px;
+    right: 50px;
+  }
+
+  .lfi-hero-title {
+    font-size: 40px;
+  }
+
+  .lfi-logo-thumbs--count-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lfi-logo-thumbs--count-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lfi-logo-thumbs--count-many {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .lfi-block-heading .lfi-container {
+    max-width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lfi-logo-title {
+    font-size: 1.25rem;
+  }
+
+  .lfi-logo-description {
+    font-size: 0.95rem;
+  }
+
+  .lfi-block-description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    /* border: 1px solid #000000; */
+  }
+
+  .lfi-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lfi-illustration-group.layout--circular .lfi-illustration-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lfi-hero {
+    padding-top: 5rem;
+  }
+
+  .lfi-hero-title {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  .lfi-hero-number {
+    font-size: 100px;
+    right: 20px;
+  }
+
+  .lfi-logo-section {
+    padding: 2rem 0;
+  }
+
+  .lfi-logo-thumbs--count-2,
+  .lfi-logo-thumbs--count-3,
+  .lfi-logo-thumbs--count-4,
+  .lfi-logo-thumbs--count-many {
+    grid-template-columns: 1fr;
+  }
+
+  .lfi-logo-thumb img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .lfi-grid--3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem;
+  }
+
+  .lfi-grid--4 {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.75rem;
+  }
+
+  .lfi-illustration-group {
+    margin-bottom: 3rem;
+    gap: 1rem;
+  }
+
+  .lfi-group-header-pill {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .lfi-illustration-sublabels {
+    gap: 0.75rem;
+  }
+
+  .lfi-sublabel-pill {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .lfi-illustration-group.layout--circular .lfi-illustration-grid {
+    gap: 1rem;
+  }
+
+  .lfi-block-heading {
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+  }
+
+  .lfi-block-heading .lfi-container {
+    max-width: 90%;
+    padding: 0.75rem 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .lfi-container--main-header {
+    max-width: 90% !important;
+    border-radius: 12px !important;
+    padding: 0.85rem 1.25rem !important;
+  }
+
+  .lfi-block-title {
+    font-size: 0.9rem;
+  }
+
+  .lfi-block-description {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+
+  .lfi-illustration-block {
+    padding-bottom: 3rem;
+  }
+
+  .lfi-logo-title {
+    font-size: 1.2rem;
+  }
+
+  .lfi-logo-description {
+    font-size: 0.9rem;
+  }
+
+  .lfi-illustration-group.layout--narrow .lfi-illustration-grid-wrapper,
+  .lfi-illustration-group.layout--narrow .lfi-illustration-sublabels {
+    max-width: 100%;
+  }
+
+  .lfi-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lfi-hero-title {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .lfi-hero-number {
+    font-size: 80px;
+    right: 10px;
+  }
+
+  .lfi-grid--3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem;
+  }
+
+  .lfi-grid--4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem;
+  }
+
+  .lfi-illustration-sublabels {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Label 2 (span 2) will still work in a 3-col grid on mobile */
+  .lfi-sublabel-pill {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .lfi-illustration-group.layout--circular .lfi-illustration-cell {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .lfi-illustration-group.layout--circular .lfi-illustration-grid {
+    gap: 1.5rem;
+  }
+
+  .lfi-block-heading .lfi-container {
+    max-width: 90%;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+  }
+
+  .lfi-block-title {
+    font-size: 0.85rem;
+  }
+
+  .lfi-illustration-block {
+    padding-bottom: 2rem;
+  }
+
+  .lfi-illustration-group {
+    margin-bottom: 2rem;
+  }
+
+  .lfi-group-header-pill {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .lfi-logo-header {
+    margin-bottom: 1rem;
+  }
+
+  .lfi-logo-section {
+    padding: 1.5rem 0;
+  }
+}
+/* --- Specific CSS for Prakriti Herbal --- */
+.lfi-ph-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.lfi-ph-thumb {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 347px; /* Specific height */
+  flex-shrink: 0;
+}
+
+.lfi-ph-thumb img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+/* --- Specific CSS for Acraft Gallery --- */
+.lfi-ag-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Different gap */
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.lfi-ag-thumb {
+  border-radius: 8px; /* Different radius */
+  overflow: hidden;
+  height: 255px; /* Specific height */
+  flex-shrink: 0;
+}
+
+.lfi-ag-thumb img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+@media (max-width: 1024px) {
+  .lfi-ph-flex-row, .lfi-ag-flex-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .lfi-ph-thumb {
+    height: 320px;
+  }
+  .lfi-ag-thumb {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lfi-ph-thumb {
+    height: 240px;
+  }
+  .lfi-ag-thumb {
+    height: 200px;
+  }
+}

@@ -1,0 +1,177 @@
+.alt-connect {
+  padding: 8rem 0;
+  background: #ffffff;
+}
+
+.alt-connect-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6rem;
+  align-items: end;
+}
+
+.alt-connect-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 3rem;
+  font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.alt-connect-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.alt-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.alt-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.alt-contact-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+  font-weight: 600;
+}
+
+.alt-contact-value {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.alt-contact-value[href]:hover {
+  color: #333;
+}
+
+.alt-connect-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+.alt-social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.alt-social-links a {
+  color: #333;
+  transition: opacity 0.3s ease;
+}
+
+.alt-social-links a:hover {
+  opacity: 0.6;
+}
+
+.alt-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.alt-form-group input,
+.alt-form-group textarea {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  outline: none;
+}
+
+.alt-form-group input:focus,
+.alt-form-group textarea.alt-message-field {
+  min-height: 12px;
+}
+
+.alt-form-group textarea {
+  resize: none;
+}
+
+.alt-submit-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+.alt-submit-btn:hover {
+  background: #000;
+  transform: translateX(5px);
+}
+
+.alt-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.alt-form-status {
+  padding: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.alt-form-status.success {
+  color: #10b981;
+}
+
+.alt-form-status.error {
+  color: #ef4444;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+  .alt-connect-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .alt-connect-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alt-connect-title {
+    font-size: 3rem;
+  }
+  
+  .alt-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

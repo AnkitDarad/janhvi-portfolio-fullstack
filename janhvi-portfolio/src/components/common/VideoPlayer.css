@@ -1,0 +1,115 @@
+.custom-video-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-video-element {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.custom-video-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.custom-video-wrapper:hover .custom-video-controls,
+.custom-video-controls:focus-within,
+.controls-always-visible .custom-video-controls {
+    opacity: 1;
+}
+
+.custom-video-play-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.custom-video-play-btn:hover {
+    transform: scale(1.1);
+}
+
+.custom-video-play-btn-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: none;
+    border: none;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.custom-video-play-btn-center svg {
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+}
+
+.custom-video-wrapper:hover .custom-video-play-btn-center,
+.custom-video-play-btn-center:focus,
+.controls-always-visible .custom-video-play-btn-center,
+.video-paused .custom-video-play-btn-center {
+    opacity: 1;
+}
+
+.custom-video-play-btn-center:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.custom-video-seek-bar {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-video-seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.custom-video-seek-bar::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.custom-video-seek-bar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}

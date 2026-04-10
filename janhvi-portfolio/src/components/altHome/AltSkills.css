@@ -1,0 +1,109 @@
+.alt-skills {
+  padding: 5rem 0;
+  background: var(--bg-secondary);
+}
+
+.alt-skills-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 3rem;
+  font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.alt-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.alt-skill-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.alt-skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: black;
+}
+
+.alt-skill-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alt-skill-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--border-color);
+  border-radius: 50%;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.alt-skill-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.alt-skill-card:hover .alt-skill-icon {
+  color: black;
+}
+
+.alt-skill-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.alt-skill-description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.alt-skill-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.alt-tool-badge {
+  padding: 0.25rem 0.625rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .alt-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .alt-skills {
+    padding: 3rem 0;
+  }
+
+  .alt-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

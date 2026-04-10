@@ -1,0 +1,675 @@
+/* ===========================
+   CASE STUDY PAGE — TYPE 5
+   Social Media Creatives
+   =========================== */
+
+.smc-page {
+  background: #fafbfc;
+  min-height: 100vh;
+}
+
+.smc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== HERO ===== */
+.smc-hero {
+  padding-top: 7rem;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.smc-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-top: 30px;
+}
+
+.smc-hero-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.smc-hero-title-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+
+.smc-hero-title {
+  margin-top: 40px;
+  font-size: 48px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--text-primary);
+  line-height: 1.15;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.smc-hero-number {
+  margin-right: 20px;
+  font-size: 184px;
+  font-weight: 700;
+  background: linear-gradient(to right, #f1f5f9, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.smc-hero-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+}
+
+/* Hero collage image */
+.smc-hero-collage {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.smc-hero-collage>img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  /* border: 1px solid #000000; */
+}
+
+/* Stats row overlaid on collage */
+.smc-hero-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 2rem 3rem;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 20px 20px;
+  /* background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%); */
+}
+
+.smc-stat-item {
+  text-align: left;
+}
+
+.smc-stat-number {
+  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  align-self: center;
+  justify-self: center;
+  color: #FFFC5B;
+  line-height: 1;
+}
+
+.smc-stat-number span {
+  font-size: 28px;
+  color: #facc15;
+}
+
+.smc-stat-label {
+  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ===== DESCRIPTION SECTION ===== */
+.smc-description {
+  padding: 4rem 0 2rem;
+}
+
+.smc-description-text {
+  font-size: 1.125rem;
+  font-family: 'Inter', sans-serif;
+  color: #45556c;
+  line-height: 1.625;
+  letter-spacing: -0.027em;
+}
+
+.smc-description-text p {
+  margin-bottom: 1.5rem;
+}
+
+.smc-description-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== INFO CARDS (Role, Tools, Skills) ===== */
+.smc-info-cards {
+  padding: 2rem 0 3rem;
+}
+
+.smc-info-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  /* border: 1px solid #000; */
+}
+
+.smc-info-card {
+  background: #e5f0ff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.smc-info-card--role {
+  flex: 3.5;
+  min-width: 280px;
+}
+
+.smc-info-card--tools {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 200px; */
+  background: #f7faff;
+  border: 1px solid #305992;
+}
+
+.smc-info-card--skills {
+  flex: 1 1 100%;
+}
+
+.smc-info-card-label {
+  font-size: 1.375rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.027em;
+}
+
+.smc-info-card-text {
+  font-size: 1.125rem;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  line-height: 1.5;
+  letter-spacing: -0.027em;
+}
+
+.smc-tools-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.smc-tool-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.smc-tool-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ===== PRODUCT SECTIONS ===== */
+.smc-product-section {
+  padding: 3rem 0;
+}
+
+.smc-product-header {
+  margin-bottom: 3rem;
+}
+
+.smc-product-title {
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.027em;
+}
+
+.smc-product-description {
+  font-size: 1.125rem;
+  font-family: 'Inter', sans-serif;
+  color: #4c4c4c;
+  line-height: 1.4;
+}
+
+/* ===== STAGGERED GRID =====
+   3-column layout with items that have different heights
+   creating the staggered/masonry-like effect from Figma.
+   
+   Each image has a size: short (~52%), square (~100%), tall (~125%)
+   relative to its column width.
+*/
+.smc-creative-grid {
+  columns: 3;
+  column-gap: 16px;
+}
+
+.smc-creative-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  /* Restored margin-bottom */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.smc-creative-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.smc-creative-item:hover img {
+  transform: scale(1.02);
+}
+
+/* ===== THANK YOU SECTION ===== */
+.smc-thankyou {
+  padding: 5rem 0 6rem;
+  text-align: center;
+}
+
+.smc-thankyou-card-container {
+  padding-bottom: 10px;
+  border-radius: 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.smc-thankyou-card {
+  background: #fff;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 50px 64px 60px;
+  border-bottom: 1px solid #000;
+  position: relative;
+  overflow: visible;
+}
+
+/* Decorative line — top-left */
+.smc-thankyou-line {
+  position: absolute;
+  height: 1px;
+  background: #000;
+}
+
+.smc-thankyou-line--top {
+  top: 30px;
+  left: 52px;
+  width: 247px;
+}
+
+/* Decorative line — bottom-right */
+.smc-thankyou-line--bottom {
+  bottom: 43px;
+  right: 52px;
+  width: 247px;
+}
+
+/* Decorative outer borders at bottom */
+.smc-thankyou-border {
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  top: 50%;
+  bottom: -8px;
+}
+
+.smc-thankyou-border--left {
+  left: -8px;
+  width: 150px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-bottom-left-radius: 48px;
+}
+
+.smc-thankyou-border--right {
+  right: -8px;
+  width: 300px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-bottom-right-radius: 48px;
+}
+
+/* Decorative pills that straddle the bottom border */
+.smc-thankyou-pill {
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.smc-thankyou-pill::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: -2px;
+  height: 6px;
+}
+
+.smc-thankyou-pill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #dadef0;
+  border-radius: 20px;
+}
+
+.smc-thankyou-pill--left {
+  bottom: -10.5px;
+  left: 37px;
+  width: 95px;
+  height: 9px;
+}
+
+.smc-thankyou-pill--right {
+  bottom: -10.5px;
+  right: 37px;
+  width: 244px;
+  height: 9px;
+}
+
+.smc-thankyou-title {
+  font-size: 64px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0;
+  line-height: 0.96;
+}
+
+.smc-thankyou-subtitle {
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 2rem;
+  line-height: 1.43;
+}
+
+.smc-thankyou-text {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.65;
+  max-width: 862px;
+  margin: 0 auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .smc-hero-number {
+    font-size: 140px;
+    right: 50px;
+  }
+
+  .smc-hero-title {
+    font-size: 40px;
+  }
+
+  .smc-hero-subtitle {
+    font-size: 16px;
+  }
+
+  .smc-hero-stats {
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+  }
+
+  .smc-creative-grid {
+    columns: 2;
+  }
+
+  .smc-thankyou-title {
+    font-size: 48px;
+  }
+
+  .smc-thankyou-card {
+    padding: 40px 32px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .smc-thankyou-card-container {
+    border-radius: 30px;
+  }
+
+  .smc-thankyou-line,
+  .smc-thankyou-pill {
+    display: none;
+  }
+
+  .smc-product-title {
+    font-size: 1.25rem;
+  }
+
+  .smc-product-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .smc-hero {
+    padding-top: 5rem;
+  }
+
+  .smc-hero-title {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  .smc-hero-number {
+    font-size: 100px;
+    right: 20px;
+  }
+
+  .smc-hero-subtitle {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .smc-hero-stats {
+    position: relative;
+    background: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+    border-radius: 0;
+  }
+
+  .smc-stat-number {
+    font-size: 18px;
+    color: #000;
+  }
+
+  .smc-stat-label {
+    font-size: 18px;
+    color: #000;
+  }
+
+  .smc-stat-number span {
+    color: #7C5CFC;
+  }
+
+  .smc-info-row {
+    flex-direction: column;
+  }
+
+  .smc-info-card--role,
+  .smc-info-card--tools {
+    flex: 1 1 100%;
+  }
+
+  .smc-creative-grid {
+    columns: 1;
+  }
+
+  .smc-thankyou-card {
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
+  }
+
+  .smc-thankyou-line,
+  .smc-thankyou-pill,
+  .smc-thankyou-border {
+    display: none;
+  }
+
+  .smc-thankyou-title {
+    font-size: 32px;
+  }
+
+  .smc-thankyou-card {
+    padding: 30px 20px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .smc-thankyou-card-container {
+    border-radius: 20px;
+  }
+
+  .smc-thankyou-subtitle {
+    font-size: 18px;
+  }
+
+  .smc-product-section {
+    padding: 2rem 0;
+  }
+
+  .smc-description {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .smc-description-text {
+    font-size: 1rem;
+  }
+
+  .smc-info-card {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .smc-info-card-label {
+    font-size: 1.125rem;
+  }
+
+  .smc-info-card-text {
+    font-size: 1rem;
+  }
+
+  .smc-tool-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .smc-stat-number {
+    font-size: 18px;
+  }
+
+  .smc-stat-label {
+    font-size: 18px;
+  }
+
+  .smc-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .smc-hero-title {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .smc-hero-number {
+    font-size: 80px;
+    right: 10px;
+  }
+
+  .smc-hero-subtitle {
+    font-size: 14px;
+    max-width: 95%;
+  }
+
+  .smc-hero-content {
+    margin-bottom: 1.5rem;
+  }
+
+  .smc-thankyou {
+    padding: 3rem 0 4rem;
+  }
+
+  .smc-thankyou-card {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+
+  .smc-thankyou-title {
+    font-size: 28px;
+  }
+
+  .smc-thankyou-subtitle {
+    font-size: 16px;
+  }
+
+  .smc-thankyou-text {
+    font-size: 0.875rem;
+  }
+
+  .smc-stat-number {
+    font-size: 14px;
+  }
+
+  .smc-stat-label {
+    font-size: 14px;
+  }
+
+  .smc-product-title {
+    font-size: 1.125rem;
+  }
+}

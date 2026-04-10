@@ -1,0 +1,468 @@
+.bmc-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+  color: #000000;
+}
+
+.bmc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bmc-container--padded {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.bmc-hero {
+  padding-top: 5rem;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bmc-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-top: 30px;
+}
+
+.bmc-hero-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bmc-hero-title-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+}
+
+.bmc-hero-title {
+  margin-top: 80px;
+  font-size: 48px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000000;
+  line-height: 1.15;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.bmc-hero-number {
+  margin-right: 20px;
+  font-size: 184px;
+  font-weight: 700;
+  background: linear-gradient(to right, #e4e4e7, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  user-select: none;
+  position: absolute;
+  top: 40%;
+  right: 100px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.bmc-hero-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: rgba(0, 0, 0, 0.72);
+  line-height: 1.6;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+}
+
+.bmc-section {
+  padding: 3rem 0;
+}
+
+.bmc-section-title {
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2rem;
+  letter-spacing: -0.027em;
+}
+
+.bmc-creative-grid {
+  columns: 3;
+  column-gap: 16px;
+}
+
+.bmc-creative-grid--wide {
+  columns: auto;
+  display: flex !important;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bmc-creative-grid--wide .bmc-creative-item {
+  flex: 1;
+  margin-bottom: 0px;
+}
+
+.bmc-creative-grid--brochures {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  columns: auto;
+}
+
+.bmc-creative-grid--brochures .bmc-creative-item {
+  margin-bottom: 0px;
+}
+
+.bmc-creative-grid--brochures .bmc-creative-item:nth-child(1) {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.bmc-creative-grid--brochures .bmc-creative-item:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.bmc-creative-grid--brochures .bmc-creative-item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.bmc-creative-grid--brochures .bmc-creative-item:nth-child(4) {
+  grid-column: 3;
+  grid-row: span 2;
+}
+
+.bmc-creative-grid--brochures .bmc-creative-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bmc-creative-grid--even {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  columns: auto;
+}
+
+.bmc-creative-grid--even .bmc-creative-item {
+  margin-bottom: 0px;
+  height: 100%;
+}
+
+.bmc-creative-grid--even .bmc-creative-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bmc-creative-grid--row {
+  display: flex !important;
+  gap: 16px;
+  columns: auto;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.bmc-creative-grid--row .bmc-creative-item {
+  margin-bottom: 0;
+  height: 420px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.bmc-creative-grid--row .bmc-creative-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bmc-creative-grid--featured {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  columns: auto;
+}
+
+.bmc-creative-grid--featured .bmc-creative-item {
+  margin-bottom: 0;
+}
+
+.bmc-creative-grid--featured .bmc-creative-item:first-child {
+  grid-row: span 2;
+}
+
+.bmc-creative-grid--featured .bmc-creative-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bmc-creative-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bmc-item-header {
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 1.5rem;
+  text-align: left;
+  margin: 0;
+  min-height: 4.5rem; /* Allow room for 2 lines */
+  display: flex;
+  align-items: flex-start;
+}
+
+.bmc-creative-item img {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+}
+
+.bmc-creative-item:hover img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+  .bmc-hero-number {
+    font-size: 140px;
+    right: 50px;
+  }
+
+  .bmc-hero-title {
+    font-size: 40px;
+  }
+
+  .bmc-hero-subtitle {
+    font-size: 16px;
+  }
+
+  .bmc-creative-grid {
+    columns: 2;
+  }
+
+  .bmc-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bmc-item-header {
+    font-size: 1.25rem;
+  }
+
+  .bmc-creative-grid--row {
+    display: block !important;
+    gap: 16px;
+  }
+
+  /* Each emailer in row gets the full width */
+  .bmc-creative-grid--row .bmc-creative-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .bmc-creative-grid--even {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  .bmc-creative-grid--even .bmc-creative-item img {
+    height: 100%;
+  }
+
+  .bmc-creative-grid--featured {
+    grid-template-rows: auto;
+  }
+
+  .bmc-container--padded {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bmc-hero {
+    padding-top: 5rem;
+  }
+
+  .bmc-hero-title {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  .bmc-hero-number {
+    font-size: 100px;
+    right: 20px;
+  }
+
+  .bmc-hero-subtitle {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .bmc-section {
+    padding: 2rem 0;
+  }
+
+  .bmc-creative-grid {
+    columns: 1;
+  }
+
+  .bmc-creative-grid--row {
+    display: block !important;
+  }
+
+  .bmc-creative-grid--featured {
+    display: block !important;
+  }
+
+  .bmc-creative-grid--even {
+    display: block !important;
+  }
+
+  .bmc-creative-grid--brochures {
+    display: block !important;
+  }
+
+  .bmc-creative-grid--featured .bmc-creative-item {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .bmc-creative-grid--featured .bmc-creative-item:first-child {
+    grid-row: auto;
+  }
+
+  .bmc-creative-grid--even {
+    display: block !important;
+  }
+
+  .bmc-creative-grid--even .bmc-creative-item {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .bmc-creative-grid--even .bmc-creative-item img {
+    height: auto;
+  }
+
+  .bmc-creative-grid--brochures {
+    display: block !important;
+  }
+
+  .bmc-creative-grid--brochures .bmc-creative-item {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .bmc-creative-grid--brochures .bmc-creative-item:first-child,
+  .bmc-creative-grid--brochures .bmc-creative-item:nth-child(4) {
+    grid-row: auto;
+  }
+
+  .bmc-creative-grid--brochures .bmc-creative-item img {
+    height: auto;
+  }
+
+  .bmc-creative-grid--featured .bmc-creative-item img {
+    height: auto;
+  }
+
+  .bmc-creative-grid--row .bmc-creative-item {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bmc-creative-grid--row .bmc-creative-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bmc-container {
+    padding: 0 1.5rem;
+  }
+
+  .bmc-container--padded {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .bmc-section-title {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .bmc-item-header {
+    font-size: 1.125rem;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bmc-hero-title {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .bmc-hero-number {
+    font-size: 80px;
+    right: 10px;
+  }
+
+  .bmc-hero-subtitle {
+    font-size: 14px;
+    max-width: 95%;
+  }
+
+  .bmc-section {
+    padding: 1.5rem 0;
+  }
+
+  .bmc-section-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .bmc-creative-item {
+    margin-bottom: 12px;
+  }
+
+  .bmc-item-header {
+    font-size: 1rem;
+    padding-bottom: 16px;
+  }
+}

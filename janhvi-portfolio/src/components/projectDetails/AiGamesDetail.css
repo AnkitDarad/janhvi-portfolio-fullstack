@@ -1,0 +1,819 @@
+/* ===========================
+   CASE STUDY PAGE — TYPE 3
+   Matching Figma Design
+   =========================== */
+
+.cs-page {
+  background: #FFFFFF;
+  min-height: 100vh;
+}
+
+.cs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== HERO ===== */
+.cs-hero {
+  padding-top: 7rem;
+  padding-bottom: 0rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-top: 30px;
+}
+
+.cs-hero-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cs-hero-title-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+}
+
+.cs-hero-title {
+  margin-top: 40px;
+  font-size: 48px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--text-primary);
+  line-height: 1.15;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.cs-hero-number {
+  margin-right: 20px;
+  font-size: 184px;
+  font-weight: 700;
+  background: linear-gradient(to right, #f1f5f9, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Hero Subtitle */
+.cs-subtitle-text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+}
+
+/* Hero Image */
+.cs-hero-mockup {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.cs-hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: none;
+  border: none;
+}
+
+/* ===== PROJECT DETAILS SECTION ===== */
+.cs-project-details {
+  margin-top: 0.1rem;
+  padding: 1rem 0;
+}
+
+.cs-details-row-game {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+}
+
+.cs-detail-item-game {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cs-detail-label-game {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cs-detail-value-game {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ===== MY ROLE & RESPONSIBILITIES ===== */
+.cs-role-section {
+  padding: 1rem 0;
+  background: #ffffff;
+}
+
+.cs-role-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.cs-role-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 24px;
+  margin-bottom: 3rem;
+  max-width: 900px;
+}
+
+.cs-role-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cs-role-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #F9F9F9;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cs-role-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.cs-role-icon svg {
+  width: 45px;
+  height: 45px;
+}
+
+.cs-role-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ===== BASIC INFORMATION ARCHITECTURE ===== */
+.cs-architecture-section {
+  padding: 5rem 0;
+}
+
+.cs-architecture-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.cs-architecture-left {
+  position: sticky;
+  top: 100px;
+}
+
+.cs-architecture-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.cs-architecture-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 20px;
+  margin: 0;
+}
+
+.cs-architecture-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.cs-architecture-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.cs-architecture-card {
+  background: #ffffff;
+  border: 1px solid #ABABAB;
+  border-radius: 12px;
+  padding: 0.875rem 1rem;
+  position: relative;
+  z-index: 2;
+  min-width: 450px;
+  max-width: 550px;
+}
+
+.cs-card-number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 54px;
+  font-weight: 900;
+  color: #d1d5db;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  z-index: 1;
+  line-height: 1;
+}
+
+.cs-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+  line-height: 1;
+}
+
+.cs-card-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1;
+  margin: 0;
+}
+
+/* ===== GAME SECTION ===== */
+.cs-game-section {
+  padding: 3rem 0;
+}
+
+.cs-game-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 15%, rgba(241,245,249,1) 77%);
+  border: 1px solid #C8D3E3;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.cs-game-left {
+  max-width: 473px;
+  padding: 43px 0 43px 34px;
+}
+
+.cs-game-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #0F172B;
+  margin-bottom: 1.25rem;
+  line-height: 38px;
+}
+
+.cs-game-body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #2C2C2C;
+  line-height: 18px;
+}
+
+.cs-game-body p {
+  margin: 0 0 1rem 0;
+  line-height: 18px;
+}
+
+.cs-game-body p:last-child {
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+.cs-game-body strong {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.cs-game-right {
+  position: relative;
+  align-self: stretch;
+}
+
+.cs-game-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: left center;
+}
+
+/* ===== HOW THE GAME WORK ===== */
+.cs-workflow-section {
+  padding: 5rem 0;
+}
+
+.cs-workflow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.cs-workflow-left {
+  padding-right: 2rem;
+}
+
+.cs-workflow-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.cs-workflow-item {
+  margin-bottom: 16px;
+}
+
+.cs-workflow-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  line-height: 26px;
+  
+}
+
+.cs-workflow-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+.cs-workflow-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 100px;
+}
+
+.cs-workflow-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ===== DESIGN CHALLENGES ===== */
+.cs-challenges-section {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.cs-challenges-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.cs-challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cs-challenge-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.cs-challenge-bullet {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.cs-challenge-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ===== FINAL DESIGNS (LIVE SCREENS) ===== */
+.cs-final-designs-section {
+  padding: 4rem 0;
+}
+
+.cs-final-designs-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2rem 0;
+}
+
+.cs-final-designs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.cs-final-design-img {
+  /* flex: 1 1 calc(50% - 0.5rem); */
+  min-width: 0;
+  max-width: 100%;
+  height: 463px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .cs-hero-number {
+    font-size: 140px;
+    right: 50px;
+  }
+
+  .cs-hero-title {
+    font-size: 40px;
+  }
+
+  .cs-subtitle-text {
+    font-size: 16px;
+  }
+
+  .cs-details-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .cs-role-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cs-final-design-img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-hero {
+    padding-top: 5rem;
+  }
+
+  .cs-hero-title {
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  .cs-hero-number {
+    font-size: 100px;
+    right: 20px;
+  }
+
+  .cs-subtitle-text {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .cs-details-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-container {
+    padding: 0 1.5rem;
+  }
+
+  .cs-role-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-role-title {
+    font-size: 28px;
+  }
+
+  .cs-role-description {
+    font-size: 16px;
+  }
+
+  .cs-architecture-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-architecture-left {
+    position: static;
+  }
+
+  .cs-architecture-title {
+    font-size: 28px;
+  }
+
+  .cs-architecture-right {
+    align-items: flex-start;
+  }
+
+  .cs-architecture-card-wrapper {
+    padding-left: 16px;
+    width: 100%;
+  }
+
+  .cs-card-number {
+    font-size: 48px;
+  }
+
+  .cs-details-row-game {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start !important;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .cs-detail-item-game {
+    padding-right: 0 !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .cs-game-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+  }
+
+  .cs-game-left {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .cs-game-right {
+    order: 2;
+    min-height: auto;
+  }
+
+  .cs-game-title {
+    font-size: 28px;
+  }
+
+  .cs-workflow-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-workflow-left {
+    padding-right: 0;
+    order: 1;
+  }
+
+  .cs-workflow-right {
+    order: 2;
+    position: static;
+  }
+
+  .cs-workflow-title {
+    font-size: 28px;
+  }
+
+  .cs-challenges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-challenges-section-title {
+    font-size: 28px;
+  }
+
+  .cs-final-designs-grid {
+    flex-direction: column;
+  }
+
+  .cs-final-design-img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 320px;
+  }
+
+  .cs-final-designs-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-hero-title {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .cs-hero-number {
+    font-size: 80px;
+    right: 10px;
+  }
+
+  .cs-subtitle-text {
+    font-size: 14px;
+    max-width: 95%;
+  }
+
+  .cs-detail-label,
+  .cs-detail-value {
+    font-size: 16px;
+  }
+
+  .cs-role-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cs-role-title {
+    font-size: 24px;
+  }
+
+  .cs-role-description {
+    font-size: 15px;
+  }
+
+  .cs-role-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cs-role-item-title {
+    font-size: 13px;
+  }
+
+  .cs-architecture-title {
+    font-size: 24px;
+  }
+
+  .cs-architecture-description {
+    font-size: 15px;
+  }
+
+  .cs-architecture-card-wrapper {
+    padding-left: 16px;
+  }
+
+  .cs-card-number {
+    font-size: 32px;
+    left: 5px;
+  }
+
+  .cs-architecture-card {
+    width: 100%;
+    min-width: 150px;
+    max-width: 350px;
+    padding: 0.75rem 0.875rem;
+  }
+
+  .cs-card-title {
+    font-size: 15px;
+  }
+
+  .cs-card-description {
+    font-size: 13px;
+  }
+
+  .cs-game-grid {
+    gap: 1.5rem;
+  }
+
+  .cs-game-title {
+    font-size: 24px;
+  }
+
+  .cs-game-description,
+  .cs-game-text {
+    font-size: 14px;
+  }
+
+  .cs-game-subtitle {
+    font-size: 15px;
+  }
+
+  .cs-workflow-grid {
+    gap: 1.5rem;
+  }
+
+  .cs-workflow-title {
+    font-size: 24px;
+  }
+
+  .cs-workflow-subtitle {
+    font-size: 15px;
+  }
+
+  .cs-workflow-text {
+    font-size: 14px;
+  }
+
+  .cs-final-designs-section {
+    padding: 3rem 0;
+  }
+
+  .cs-final-designs-title {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+  }
+
+  .cs-final-designs-grid {
+    gap: 1.5rem;
+  }
+
+  .cs-final-design-img {
+    height: 280px;
+  }
+
+  .cs-challenges-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cs-challenges-section-title {
+    font-size: 24px;
+  }
+
+  .cs-challenge-text {
+    font-size: 14px;
+  }
+}

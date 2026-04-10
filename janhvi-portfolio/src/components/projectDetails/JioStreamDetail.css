@@ -1,0 +1,1517 @@
+/* ===========================
+   CASE STUDY PAGE — TYPE 2
+   Matching Figma Design
+   =========================== */
+
+.cs-page {
+  background: #fafbfc;
+  min-height: 100vh;
+}
+
+.cs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cs-section {
+  padding: 5rem 0;
+}
+
+.cs-section-title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.cs-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+/* ===== HERO ===== */
+.cs-hero {
+  padding-top: 7rem;
+  padding-bottom: 0rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  margin-bottom: 3rem;
+}
+
+.cs-back-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateX(-3px);
+}
+
+.cs-hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-top: 30px;
+}
+
+.cs-hero-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cs-hero-title {
+  margin-top: 120px;
+  font-size: 48px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--text-primary);
+  line-height: 1.15;
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cs-hero-number {
+  margin-right: 20px;
+  font-size: 184px;
+  font-weight: 700;
+  background: linear-gradient(to right, #f1f5f9, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Hero Image */
+.cs-hero-mockup {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+
+.cs-hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: none;
+  border: none;
+}
+
+/* ===== PROJECT DETAILS SECTION ===== */
+.cs-project-details {
+  margin-top: 0.1rem;
+  padding: 1rem 0;
+}
+
+.cs-details-row {
+  display: flex;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  /* border: 1px solid red; */
+}
+
+.cs-detail-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* border: 1px solid blue; */
+}
+
+.cs-detail-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cs-detail-value {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.cs-about-section {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1.5fr max-content;
+  gap: 18rem;
+}
+
+.cs-about-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.cs-about-description {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.cs-about-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cs-about-list li {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.cs-about-right {
+  align-items: right;
+}
+
+.cs-about-me-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cs-about-me-list li {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.cs-about-me-list li br {
+  display: inline;
+}
+
+/* ===== FEATURES OVERVIEW ===== */
+.cs-features-overview {
+  padding-top: 32px;
+}
+
+.cs-features-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.cs-features-grid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.cs-features-grid::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+.cs-feature-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 320px;
+  max-width: 460px;
+  flex-shrink: 0;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cs-feature-card-title {
+  font-size: 18px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0px;
+}
+
+.cs-feature-card-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.cs-feature-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== DESIGN APPROACH ===== */
+.cs-design-approach {
+  padding: 5rem 0;
+  /* border: 1px solid red; */
+}
+
+.cs-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.cs-approach-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* border: 1px solid blue; */
+}
+
+.cs-approach-heading {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin: 0 0 0 0;
+}
+
+.cs-approach-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-approach-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 18px;
+  margin: 0;
+}
+
+.cs-approach-text strong {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cs-approach-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+.cs-approach-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cs-approach-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== CHALLENGES ===== */
+.cs-challenges {
+  padding-top: 4px;
+}
+
+.cs-challenges-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.cs-challenges-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  overflow: visible;
+  gap: 1rem;
+  padding: 0.5rem 1rem 1rem 0;
+}
+
+
+
+.cs-challenge-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.07);
+}
+
+.cs-challenge-text {
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #404040;
+  line-height: 0rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== OUTCOMES ===== */
+.cs-outcomes {
+  padding: 5rem 0 0 0;
+}
+
+.cs-outcomes-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.cs-outcomes-hero {
+  margin-bottom: 3rem;
+}
+
+.cs-outcomes-hero-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.cs-outcomes-hero-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+  line-height: 18px;
+  margin: 0;
+  max-width: 700px;
+}
+
+.cs-outcomes-grid {
+  display: grid;
+  grid-template-columns: 1.65fr 0.65fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.cs-outcome-showcase-card {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-outcome-showcase-card-large {
+  grid-column: auto;
+}
+
+.cs-outcome-img {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: none;
+  border: none;
+}
+
+/* Confidential Project (part of Outcomes) */
+.cs-confidential-section {
+  margin-top: 5rem;
+  padding-top: 4rem;
+}
+
+.cs-confidential-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.cs-confidential-text {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cs-confidential-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cs-confidential-note {}
+
+.cs-note-title {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cs-note-title strong {
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cs-confidential-image {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cs-confidential-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Small Features (part of Outcomes) */
+.cs-small-features {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.cs-small-features-title {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.cs-small-features-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 100%;
+}
+
+.cs-small-features-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.cs-small-feature-img {
+  width: auto;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+/* Glass Button Overlay */
+.cs-glass-button-overlay {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cs-glass-button-overlay {
+    position: static;
+    transform: none;
+    margin-top: 1.25rem;
+  }
+}
+
+/* Full Width Image */
+.cs-full-width-image {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-full-width-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Mobile visit button */
+.cs-visit-btn {
+  margin-top: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(45deg, #5C6C9D 0%, #000000 50%, #5C6C9D 100%);
+  border: 0.5px solid #000000;
+  color: #ffffff;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cs-visit-btn:hover {
+  opacity: 0.85;
+}
+
+/* Final Note */
+.cs-final-note {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.cs-final-note-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .cs-final-note {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .cs-final-note-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-final-note {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .cs-final-note-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+/* Other Important Features — Horizontal Scroll Strip */
+.cs-other-features {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.cs-other-features-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.cs-other-features-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 1rem;
+  padding-right: 16px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cs-other-features-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-other-features-card {
+  flex: 0 0 auto;
+  height: 330px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cs-other-features-card:hover {
+  /* transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12); */
+}
+
+.cs-other-features-card-img {
+  height: 100%;
+  /* display: block; */
+  object-fit: contain;
+}
+
+/* Label card variant (code-generated gradient + text) */
+.cs-other-features-card--label {
+  background: linear-gradient(45deg, #7A85B4 0%, #000000 50%, #7A85B4 100%);
+  display: flex;
+  align-items: flex-end;
+  margin-left: 36px;
+  padding: 1.5rem;
+  width: 220px;
+}
+
+.cs-other-features-card--label:first-child {
+  margin-left: 0;
+}
+
+.cs-other-features-card-label {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  white-space: pre-line;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .cs-other-features-card {
+    /* width: 220px; */
+    height: 220px;
+  }
+
+  .cs-other-features-card--label {
+    width: 180px;
+    padding: 1.25rem;
+  }
+
+  .cs-other-features-card-label {
+    font-size: 22px;
+  }
+}
+
+/* ===== INFO BAR ===== */
+.cs-info-bar {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cs-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.cs-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.cs-info-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.cs-info-value {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ===== BRIEF (About / Problem / Solution) ===== */
+.cs-brief {
+  padding: 4rem 0;
+}
+
+.cs-brief-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.cs-brief-item h3 {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.cs-brief-item p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ===== SPECS (Features / Colors / Typography) ===== */
+.cs-specs {
+  padding: 4rem 0;
+}
+
+.cs-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.cs-spec-heading {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Feature Tags */
+.cs-feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cs-feature-tag {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Color Palette */
+.cs-color-palette {
+  display: flex;
+  gap: 1rem;
+}
+
+.cs-color-swatch {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.cs-color-swatch:hover {
+  transform: scale(1.1);
+}
+
+.cs-color-hex {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cs-color-swatch:hover .cs-color-hex {
+  opacity: 1;
+}
+
+/* Typography */
+.cs-typography {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cs-type-sample {
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.cs-type-name {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cs-type-preview {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.75rem;
+  color: var(--text-primary);
+}
+
+.cs-type-preview.heading-preview {
+  font-weight: 700;
+}
+
+.cs-type-preview.body-preview {
+  font-weight: 400;
+}
+
+.cs-type-role {
+  font-size: 0.75rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* ===== DESIGN APPROACH ===== */
+.cs-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.cs-approach-text p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.cs-approach-image {
+  width: 100%;
+}
+
+/* ===== CHALLENGE ===== */
+.cs-challenge-text {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  color: var(--text-secondary);
+  margin-bottom: 0rem;
+  max-width: 800px;
+}
+
+.cs-challenge-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* ===== OUTCOMES ===== */
+.cs-outcomes-grid {
+  display: grid;
+  grid-template-columns: 1.65fr 0.65fr 1fr;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.cs-outcome-card {
+  padding: 2rem;
+  background: #fafbfc;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.cs-outcome-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.cs-outcome-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
+}
+
+.cs-outcome-card p {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* ===== GALLERY ===== */
+.cs-gallery {
+  padding-bottom: 3rem;
+}
+
+.cs-fullwidth-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.cs-gallery-row {
+  display: grid;
+  gap: 2rem;
+}
+
+.cs-gallery-row.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.cs-gallery-row.single {
+  grid-template-columns: 1fr;
+}
+
+.cs-gallery-row.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cs-gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  aspect-ratio: 16 / 10;
+}
+
+.cs-gallery-item.wide {
+  aspect-ratio: 21 / 9;
+}
+
+/* ===== MORE VISUALS ===== */
+.cs-visuals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cs-visuals-grid .span-2 {
+  grid-column: 1 / -1;
+}
+
+.cs-visuals-grid .cs-gallery-item {
+  aspect-ratio: 16 / 10;
+}
+
+.cs-visuals-grid .span-2 .cs-placeholder-image {
+  aspect-ratio: 21 / 9;
+}
+
+/* Shared Placeholder Image */
+.cs-placeholder-image {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+
+.cs-placeholder-image.small {
+  min-height: 180px;
+}
+
+.cs-placeholder-image.dark {
+  background: linear-gradient(135deg, #475569, #334155);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== TOOLS ===== */
+.cs-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cs-tool-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.cs-tool-item:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.cs-tool-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* ===== FOOTER CTA (Purple Wave) ===== */
+.cs-footer-cta {
+  position: relative;
+  background: linear-gradient(135deg, #4338ca, #6366f1, #7c3aed);
+  color: white;
+  text-align: center;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.cs-wave-top {
+  position: relative;
+  color: #fafbfc;
+  margin-bottom: -1px;
+}
+
+.cs-wave-top svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+.cs-footer-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+}
+
+.cs-footer-mockup {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.cs-footer-mockup .cs-placeholder-image {
+  border-radius: 16px;
+  min-height: 300px;
+}
+
+.cs-footer-content h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cs-footer-content p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.cs-footer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cs-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+
+.cs-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.cs-cta-btn.secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+
+.cs-cta-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+/* Tablet breakpoint (iPad and similar devices) */
+@media (max-width: 1024px) {
+  .cs-container {
+    padding: 0 1.5rem;
+  }
+
+  .cs-hero {
+    padding-top: 5rem;
+  }
+
+  .cs-hero-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-top: 80px;
+  }
+
+  .cs-hero-number {
+    font-size: 8rem;
+  }
+
+  .cs-hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cs-details-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start !important;
+  }
+
+  .cs-detail-item {
+    padding-right: 0 !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .cs-about-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-about-me-list li br {
+    display: none;
+  }
+
+  .cs-features-grid {
+    gap: 1.25rem;
+    padding: 0.5rem 1rem 1rem;
+  }
+
+  .cs-feature-card {
+    min-width: 280px;
+    max-width: 380px;
+    padding: 1.25rem;
+  }
+
+  .cs-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+  }
+
+  .cs-outcomes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cs-outcome-showcase-card-large {
+    grid-column: 1 / -1;
+  }
+
+  .cs-outcome-img {
+    max-height: 400px;
+  }
+
+  .cs-feature-full-img {
+    max-height: 350px;
+  }
+
+  .cs-confidential-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-small-features-images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cs-section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-hero {
+    padding-top: 6rem;
+  }
+
+  .cs-hero-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 2rem;
+    margin-top: 24px;
+  }
+
+  .cs-hero-number {
+    font-size: 5rem;
+    align-self: flex-end;
+  }
+
+  .cs-hero-mockup {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mockup-laptop {
+    width: 100%;
+  }
+
+  .mockup-tablet,
+  .mockup-phone {
+    display: none;
+  }
+
+  .cs-details-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    align-items: flex-start !important;
+  }
+
+  .cs-detail-item {
+    padding-right: 0 !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .cs-about-section {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cs-about-me-list li br {
+    display: none;
+  }
+
+  .cs-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-approach-visual {
+    padding: 2rem;
+  }
+
+  .cs-challenges {
+    padding: 5rem 0;
+  }
+
+  .cs-challenges-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 1rem;
+    padding: 0.5rem 1rem 1rem 0;
+  }
+
+  .cs-challenges-grid::-webkit-scrollbar {
+    display: block;
+    height: 720px;
+    border: 1px solid var(border-color);
+  }
+
+  .cs-challenge-card {
+    min-width: 280px;
+    max-width: 280px;
+    height: 50px;
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.07);
+  }
+
+  .cs-challenge-text {
+    line-height: 1.25;
+  }
+
+  .cs-feature-card {
+    min-width: 240px;
+    max-width: 310px;
+    padding: 1.5rem;
+  }
+
+  .cs-outcomes-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  .cs-outcome-showcase-card {
+    width: min(100%, 520px);
+  }
+
+  .cs-outcome-img {
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+  }
+
+  .cs-small-feature-img {
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+  }
+
+  .cs-feature-full-img {
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+  }
+
+  .cs-confidential-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-small-features-images {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cs-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cs-brief-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cs-specs-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cs-challenge-images {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-gallery-row.two-col,
+  .cs-gallery-row.three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-visuals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-section {
+    padding: 3rem 0;
+  }
+
+  .cs-wave-top svg {
+    height: 60px;
+  }
+
+  .cs-footer-mockup .cs-placeholder-image {
+    min-height: 200px;
+  }
+}
