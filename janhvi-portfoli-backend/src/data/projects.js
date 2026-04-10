@@ -522,11 +522,11 @@ export const projects = [
         description: 'A video commerce platform that enables brands to showcase and sell products through interactive video experiences, providing a seamless and engaging solution for the e-commerce industry.',
         gridType: 'staggered',
         images: [
-          { src: '/images/social-media-creatives/SM_JS1.png', alt: 'JioStream Stats', size: 'short' },
+          { src: '/images/social-media-creatives/SM_JS1v1.png', alt: 'JioStream Stats', size: 'short' },
           { src: '/images/social-media-creatives/SM_JS2.png', alt: 'JioStream Instagram Mockup', size: 'tall' },
           { src: '/images/social-media-creatives/SM_JS3.png', alt: 'JioStream Christmas', size: 'square' },
           { src: '/images/social-media-creatives/SM_JS4.png', alt: 'JioStream Floating Video', size: 'square' },
-          { src: '/images/social-media-creatives/SM_JS5.png', alt: 'JioStream Sparkle Sale', size: 'tall' },
+          { src: '/images/social-media-creatives/SM_JS5v1.png', alt: 'JioStream Sparkle Sale', size: 'tall' },
           { src: '/images/social-media-creatives/SM_JS61.png', alt: 'JioStream LinkedIn', size: 'short' },
         ],
       },
