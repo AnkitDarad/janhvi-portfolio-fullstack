@@ -69,6 +69,23 @@ const VideoPlayer = ({
         setProgress(100);
     };
 
+    const isDriveVideo = src.includes('drive.google.com');
+    const driveEmbedUrl = isDriveVideo ? src.replace('/view', '/preview').replace('?usp=sharing', '') : src;
+
+    if (isDriveVideo) {
+        return (
+            <div className={`custom-video-wrapper ${className} controls-always-visible`}>
+                <iframe
+                    src={driveEmbedUrl}
+                    className="custom-video-element"
+                    style={{ border: 'none', width: '100%', aspectRatio: '16/9' }}
+                    allow="autoplay; flash"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        );
+    }
+
     return (
         <div className={`custom-video-wrapper ${className} ${alwaysShowControls || !isPlaying ? 'controls-always-visible' : ''} ${!isPlaying ? 'video-paused' : ''}`}>
             <video

@@ -462,7 +462,7 @@ export const projects = [
     ],
     videoDemo: {
       title: 'Product Experience Vision',
-      src: 'https://drive.google.com/uc?export=download&id=1HKwcIctH3egKdZ7Csku95nRVgjzLg7Oy',
+      src: 'https://drive.google.com/file/d/1HKwcIctH3egKdZ7Csku95nRVgjzLg7Oy/view?usp=sharing',
       poster: '/images/art-marketplace/thumbnail.png',
     },
   },
