@@ -1,4 +1,5 @@
-const API_BASE = '/api';
+export const IMAGE_BASE = import.meta.env.VITE_IMAGE_BASE || '';
+const API_BASE = import.meta.env.VITE_API_BASE || '/api';
 
 const getToken = () => localStorage.getItem('authToken');
 
