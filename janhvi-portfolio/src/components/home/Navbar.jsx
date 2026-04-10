@@ -38,9 +38,9 @@ const Navbar = ({ onLogout, showLogout = true }) => {
       setTimeout(() => {
         const element = document.querySelector(href);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-      }, 100);
+      }, 500); // Increased timeout to ensure page sections are mounted
     } else {
       // Already on home page, just scroll to section
       const element = document.querySelector(href);
