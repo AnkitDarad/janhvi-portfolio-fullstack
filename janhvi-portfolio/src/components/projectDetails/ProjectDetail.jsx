@@ -21,8 +21,12 @@ const LAYOUT_COMPONENTS = {
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { getProject, canAccessProject } = useAccessibleProjects();
+  const { getProject, canAccessProject, loading } = useAccessibleProjects();
   const project = getProject(id);
+
+  if (loading) {
+    return <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>Loading project...</div>;
+  }
 
   if (!project || !canAccessProject(parseInt(id))) {
     return (
