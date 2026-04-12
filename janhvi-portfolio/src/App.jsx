@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './context/AuthContext';
-import Login from './components/auth/Login';
 import Navbar from './components/home/Navbar';
 import Hero from './components/home/Hero';
 import About from './components/home/About';
@@ -18,10 +16,9 @@ import ProjectDetail from './components/projectDetails/ProjectDetail';
 import ScrollToTop from './components/ScrollToTop';
 
 const MainPage = () => {
-  const { logout, authEnabled } = useAuth();
   return (
     <>
-      <Navbar onLogout={logout} showLogout={authEnabled} />
+      <Navbar showLogout={false} />
       <Hero />
       <About />
       <Portfolio />
@@ -33,10 +30,9 @@ const MainPage = () => {
 };
 
 const AltMainPage = () => {
-  const { logout, authEnabled } = useAuth();
   return (
     <>
-      <Navbar onLogout={logout} showLogout={authEnabled} />
+      <Navbar showLogout={false} />
       <AltBanner />
       <AltQuote />
       <AltAbout />
@@ -49,27 +45,16 @@ const AltMainPage = () => {
 };
 
 const ProjectPage = () => {
-  const { logout, authEnabled } = useAuth();
   return (
     <>
-      <Navbar onLogout={logout} showLogout={authEnabled} />
+      <Navbar showLogout={false} />
       <ProjectDetail />
       <Footer />
     </>
   );
 };
 
-const AppRoutes = () => {
-  const { isAuthenticated, isLoading } = useAuth();
-
-  if (isLoading) {
-    return null;
-  }
-
-  if (!isAuthenticated) {
-    return <Login />;
-  }
-
+function App() {
   return (
     <Router>
       <ScrollToTop />
@@ -82,14 +67,6 @@ const AppRoutes = () => {
         </Routes>
       </div>
     </Router>
-  );
-};
-
-function App() {
-  return (
-    <AuthProvider>
-      <AppRoutes />
-    </AuthProvider>
   );
 }
 

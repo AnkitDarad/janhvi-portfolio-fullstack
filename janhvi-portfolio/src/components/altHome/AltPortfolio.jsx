@@ -28,6 +28,8 @@ const AltPortfolio = () => {
                   src={project.homeImage || project.heroImage}
                   alt={project.title}
                   className="alt-card-img"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="alt-card-overlay">

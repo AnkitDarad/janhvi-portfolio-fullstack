@@ -52,6 +52,8 @@ const Portfolio = () => {
                     src={project.heroImage} 
                     alt={project.title}
                     className="portfolio-project-image"
+                    loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <div className="project-placeholder">
