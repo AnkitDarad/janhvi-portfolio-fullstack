@@ -132,3 +132,16 @@ html {
   background-color: var(--primary-color);
   color: white;
 }
+
+/* Global Image Optimization & CLS Mitigation */
+img {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 400px;
+  background-color: var(--border-color); /* Placeholder color until image loads */
+}
+
+/* Ensure small icons don't get the huge intrinsic height */
+svg img, icon img, header img, nav img, .alt-social-links img, .contact-social img {
+  contain-intrinsic-size: auto;
+  background-color: transparent;
+}
