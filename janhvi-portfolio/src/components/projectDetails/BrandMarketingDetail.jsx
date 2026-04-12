@@ -48,7 +48,12 @@ const BrandMarketingDetail = ({ project }) => {
               {(section.images || []).map((img, imgIndex) => (
                 <div key={imgIndex} className="bmc-creative-item">
                   {img.header && <h4 className="bmc-item-header">{img.header}</h4>}
-                  <img src={img.src} alt={img.alt || section.title} />
+                  <img 
+                    src={img.src} 
+                    alt={img.alt || section.title} 
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
               ))}
             </div>

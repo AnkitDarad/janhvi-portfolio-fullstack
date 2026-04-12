@@ -241,6 +241,13 @@
   align-items: flex-start;
 }
 
+/* Only apply hover effects on devices that support hover (prevents jumping on mobile) */
+@media (hover: hover) {
+  .bmc-creative-item:hover img {
+    transform: scale(1.02);
+  }
+}
+
 .bmc-creative-item img {
   width: 100%;
   height: 100%;
@@ -249,10 +256,9 @@
   border-radius: 15px;
   transition: transform 0.4s ease;
   object-fit: cover;
-}
-
-.bmc-creative-item:hover img {
-  transform: scale(1.02);
+  /* Prevent layout shifts */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 1024px) {
