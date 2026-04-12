@@ -343,8 +343,21 @@
     padding: 2rem 0;
   }
 
+  /* CRITICAL: Replace columns layout with simple block to prevent scroll jumping */
   .bmc-creative-grid {
-    columns: 1;
+    columns: unset;
+    display: block;
+  }
+
+  .bmc-creative-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .bmc-creative-item img {
+    width: 100%;
+    height: auto;
+    transition: none;
   }
 
   .bmc-creative-grid--row {
