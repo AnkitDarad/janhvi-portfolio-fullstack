@@ -169,8 +169,8 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows="5"
-                placeholder="Tell me about your project..."
+                rows="4"
+                placeholder="Your Message"
               ></textarea>
             </div>
 

@@ -137,7 +137,6 @@ html {
 img {
   content-visibility: auto;
   contain-intrinsic-size: auto 400px;
-  background-color: var(--border-color); /* Placeholder color until image loads */
 }
 
 /* Ensure small icons don't get the huge intrinsic height */
