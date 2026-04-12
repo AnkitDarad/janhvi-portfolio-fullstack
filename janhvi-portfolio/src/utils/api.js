@@ -23,26 +23,15 @@ export const api = {
         body: JSON.stringify(data),
       });
 
-      const contentType = response.headers.get('content-type');
-      let result;
+      const result = await response.json();
       
-      if (contentType && contentType.includes('application/json')) {
-        result = await response.json();
-      } else {
-        const text = await response.text();
-        throw new Error(text || `Status: ${response.status}`);
-      }
-      
-      if (!response.ok || !result.success) {
+      if (!response.ok || result.success === false) {
         throw new Error(result.message || 'Failed to send message');
       }
       
-      return { success: true, message: 'Thank you! Your message has been sent.' };
+      return result;
     } catch (error) {
       console.error('Submission error:', error);
-      if (error.message.includes('Unexpected end of JSON input')) {
-        throw new Error('API server is not responding correctly. Are you running in development mode?');
-      }
       throw error;
     }
   },
